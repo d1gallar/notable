@@ -1,6 +1,6 @@
 # Notable
 
-![branding](https://github.com/d1gallar/notable/assets/49170814/ede1c09b-d5e2-4937-8ea3-4751492a7284)
+![branding](https://github.com/d1gallar/notable/assets/49170814/e0dd4ac7-a647-4fd7-9ee5-15e4edf96287)
 
 
 ## 📄 Description
