@@ -2,8 +2,9 @@
 
 ![branding](https://github.com/d1gallar/notable/assets/49170814/ede1c09b-d5e2-4937-8ea3-4751492a7284)
 
+
 ## 📄 Description
-This project is a note-taking web app that helps you create short, customizable segemented elements to boost organization and productivity.
+This project is a note-taking web app that helps you create short, customizable, and segmented elements to boost organization and productivity.
 
 ## 📦 Key Features
 - Realtime Database ⌨️
