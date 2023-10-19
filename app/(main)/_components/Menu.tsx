@@ -50,7 +50,7 @@ export const Menu = ({ documentId }: MenuProps) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button size="sm" variant="ghost">
+        <Button size="sm" variant="ghost" role="menu" aria-label="Open Dropdown Menu">
           <MoreHorizontal className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
@@ -60,7 +60,7 @@ export const Menu = ({ documentId }: MenuProps) => {
         alignOffset={8}
         forceMount
       >
-        <DropdownMenuItem onClick={onArchive}>
+        <DropdownMenuItem onClick={onArchive} role="button" aria-label="Delete Button">
           <Trash className="h-4 w-4 mr-2"/>
           Delete
         </DropdownMenuItem>

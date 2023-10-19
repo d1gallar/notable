@@ -27,7 +27,7 @@ const UserItem = () => {
         >
           <div className="gap-x-2 flex items-center max-w-[150px]">
             <Avatar className="h-5 w-5">
-              <AvatarImage src={user?.imageUrl} />
+              <AvatarImage src={user?.imageUrl} alt="User Icon" />
             </Avatar>
             <span className="text-start font-medium line-clamp-1">
               {user?.fullName}

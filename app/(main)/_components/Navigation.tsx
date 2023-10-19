@@ -135,6 +135,7 @@ const Navigation = () => {
         <div
           onClick={collapse}
           role="button"
+          aria-label="Close Sidebar"
           className={cn(
             "absolute h-6 w-6 text-muted-foreground rounded-sm hover:bg-neutral-300 dark:hover:bg-neutral-600 top-1 right-2 opacity-0 group-hover/sidebar:opacity-100 transition",
             isMobile && "opacity-100"
@@ -144,13 +145,13 @@ const Navigation = () => {
         </div>
         <div>
           <UserItem />
-          <Item label="Search" icon={Search} isSearch onClick={search.onOpen} />
-          <Item label="Settings" icon={Settings} onClick={settings.onOpen} />
-          <Item onClick={handleCreate} label="New page" icon={PlusCircle} />
+          <Item label="Search" icon={Search} isSearch onClick={search.onOpen} aria-label="Searchbar" />
+          <Item label="Settings" icon={Settings} onClick={settings.onOpen} aria-label="Settings" />
+          <Item onClick={handleCreate} label="New page" icon={PlusCircle} aria-label="Create new document" />
         </div>
         <div className="mt-4">
           <DocumentList />
-          <Item onClick={handleCreate} icon={PlusIcon} label="Add a page" />
+          <Item onClick={handleCreate} icon={PlusIcon} label="Add a page" aria-label="Create new document" />
           <Popover>
             <PopoverTrigger className="w-full mt-4">
               <Item label="Trash" icon={Trash} onClick={() => {}} />

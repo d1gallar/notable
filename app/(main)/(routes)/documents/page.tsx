@@ -27,22 +27,24 @@ const DocumentsPage = () => {
   };
 
   return (
-    <div className="h-full flex  flex-col items-center justify-center space-y-4">
+    <div className="h-full flex w-full flex-col items-center justify-center space-y-4">
       <Image
         src="/reading.png"
-        height="300"
-        width="300"
+        height="640"
+        width="480"
         alt="Empty"
-        className="dark:hidden"
+        className="dark:hidden w-72"
         draggable={false}
+        loading="eager"
         />
       <Image
         src="/reading-dark.png"
-        height="300"
-        width="300"
+        height="640"
+        width="480"
         alt="Empty"
-        className="hidden dark:block"
+        className="hidden dark:block w-72"
         draggable={false}
+        loading="eager"
       />
       <h2 className="text-lg font-medium">
         Welcome to {user?.firstName}&apos;s Notable

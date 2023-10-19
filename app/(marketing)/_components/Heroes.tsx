@@ -11,7 +11,7 @@ const Heroes = () => {
             className="object-contain dark:hidden"
             alt="Documents"
             priority={true}
-            quality={100}
+            loading="eager"
           />
           <Image
             src="/hero-dark.png"
@@ -19,7 +19,7 @@ const Heroes = () => {
             className="object-contain hidden dark:block"
             alt="Documents"
             priority={true}
-            quality={100}
+            loading="eager"
           />
         </div>
       </div>

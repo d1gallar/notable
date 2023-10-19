@@ -14,7 +14,7 @@ const ErrorPage = () => {
         alt="Error"
         className="dark:hidden"
         priority={true}
-        quality={100}
+        loading="eager"
       />
       <Image
         src="/error-dark.png"
@@ -23,7 +23,7 @@ const ErrorPage = () => {
         alt="Error"
         className="hidden dark:block"
         priority={true}
-        quality={100}
+        loading="eager"
       />
       <h2 className="text-white text-xl font-medium">
         Uh Oh! This page could not be found!

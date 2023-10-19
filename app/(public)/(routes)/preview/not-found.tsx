@@ -12,7 +12,7 @@ const NotFound = () => {
         alt="Error"
         className="dark:hidden"
         priority={true}
-        quality={100}
+        loading="eager"
       />
       <Image
         src="/error-dark.png"
@@ -21,7 +21,7 @@ const NotFound = () => {
         alt="Error"
         className="hidden dark:block"
         priority={true}
-        quality={100}
+        loading="eager"
       />
       <h2 className="text-xl font-medium">Uh Oh! Something went wrong!</h2>
       <Button asChild>

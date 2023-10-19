@@ -116,6 +116,7 @@ const Item = ({
       {!!id && (
         <div
           role="button"
+          aria-label="Expand Document"
           className="h-full rounded-sm hover:bg-neutral-300 dark:hover:bg-neutral-600 mr-1"
           onClick={handleExpand}
         >
@@ -140,6 +141,7 @@ const Item = ({
             <DropdownMenuTrigger onClick={(e) => e.stopPropagation()} asChild>
               <div
                 role="button"
+                aria-label="Open Dropdown Menu"
                 className="opacity-0 group-hover:opacity-100 h-full ml-auto rounded-sm hover:bg-neutral-300 dark:hover:bg-neutral-600"
               >
                 <MoreHorizontal className="h-4 w-4 text-muted-foreground" />
@@ -151,7 +153,7 @@ const Item = ({
               side="right"
               forceMount
             >
-              <DropdownMenuItem onClick={onArchive}>
+              <DropdownMenuItem onClick={onArchive} role="button" aria-label="Delete Document" >
                 <Trash className="h-4 w-4 mr-2" />
                 Delete
               </DropdownMenuItem>
@@ -163,6 +165,7 @@ const Item = ({
           </DropdownMenu>
           <div
             role="button"
+            aria-label="Create Document"
             onClick={onCreate}
             className="opacity-0 group-hover:opacity-100 h-full ml-auto rounded-sm hover:bg-neutral-300 dark:hover:bg-neutral-600"
           >

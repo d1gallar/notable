@@ -4,7 +4,8 @@ const nextConfig = {
     domains: [
       "files.edgestore.dev"
     ]
-  }
+  },
+  productionBrowserSourceMaps: true,
 }
 
 module.exports = nextConfig

@@ -23,7 +23,7 @@ const ErrorPage = () => {
         alt="Error"
         className="dark:hidden"
         priority={true}
-        quality={100}
+        loading="eager"
       />
       <Image
         src="/error-dark.png"
@@ -32,7 +32,7 @@ const ErrorPage = () => {
         alt="Error"
         className="hidden dark:block"
         priority={true}
-        quality={100}
+        loading="eager"
       />
       {matchDocPath(path) && params?.documentId ? (
         <h2 className="text-xl font-medium">
